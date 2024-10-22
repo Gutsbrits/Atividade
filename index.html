@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Usando VueJs</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="conteiner" id="desafio">
+        <!-- 1) Preencha a tag <p> abaixo com o seu Nome e Idade - usando Interpolação -->
+        <p class="um">{{ fullName }}</p>
+        <!-- <p>Usando VueJS - SEU_NOME (IDADE)</p> -->
+    
+        <!-- 2) Exiba sua idade multiplicada por 3 -->
+        <p class="dois">{{ old * 3 }}</p>
+    
+        <!-- 3) Chame uma função para exibir um número randomico
+            entre 0 and 1 (Math.random()) -->
+        <p class="tres">{{ valueRandom }}</p>
+    
+        <!-- 4) Procure uma imagem no google e exiba na tag img 
+            fazendo o binding no atributo "src" -->
+        <div class="quatro">
+            <img :src="image" height="100">
+        </div>
+    
+        <!-- 5) Inicialize o input com o seu nome (use o atributo "value") -->
+        <div class="cinco">
+            <input :value="fullName" type="text">
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
